@@ -20,20 +20,20 @@ Python ile yazılmış, çok iş parçacıklı (multithreaded) basit bir TCP por
 ## Kullanım
 
 ```bash
-python port_scanner.py <hedef>
+python PortScanner.py <hedef>
 ```
 
 ### Örnekler
 
 ```bash
 # Varsayılan port aralığı (1-1024) ile tarama
-python port_scanner.py 192.168.1.1
+python PortScanner.py 192.168.1.1
 
 # Belirli port aralığı ve 200 thread ile
-python port_scanner.py 192.168.1.1 -p 1-1000 -t 200
+python PortScanner.py 192.168.1.1 -p 1-1000 -t 200
 
 # Belirli portlar, sonucu dosyaya kaydet
-python port_scanner.py example.com -p 22,80,443 -o sonuc.json
+python PortScanner.py example.com -p 22,80,443 -o sonuc.json
 ```
 
 ### Parametreler
